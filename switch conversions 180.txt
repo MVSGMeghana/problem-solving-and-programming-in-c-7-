@@ -1,0 +1,54 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+int main() 
+{
+ int hr,sec,min,km,m,cm,sqft,ccft,c;
+ float sqcm,sqm,ccmtr,cccm,f,k; 
+ char a;
+ printf("enter the switch");
+ scanf("%c",&a);
+ switch(a)
+ {
+     case 'l':
+     printf("enter your value in hours") ;
+   scanf("%d",&hr);
+   min=hr*60;
+   sec=hr*3600;
+   printf("\n value in mins %d",min);
+   printf("\n value in seconds %d",sec);
+   break;
+   case 'm':
+   printf("\n enter your value in kilometers") ;
+   scanf("%d",&km);
+   m=km*1000;
+   cm=m*100;
+   printf("\n value in meters %d",m);
+   printf("\n value in cm %d",cm);
+   break;
+   case 'n':
+   printf("\n enter your value in square feet") ;
+   scanf("%d",&sqft);
+   sqm=sqft*0.0929;
+   sqcm=sqm*10000;
+   printf("\n value in square meters %f",sqm);
+   printf("\n value in square cm %f",sqcm);
+   break;
+   case 'o':
+   printf("\n enter your value in ccft") ;
+   scanf("%d",&ccft);
+   ccmtr=ccft*0.0283;
+   cccm=ccmtr*1000000;
+   printf("\n value in cubic meters %f",ccmtr);
+   printf("\n value in cubic cm %f",cccm); 
+   break;
+   case 'p':
+   printf("\n enter your value in celcius") ;
+   scanf("%d",&c);
+   f=(c*1.8)+32;
+  k=c+274.15;
+   printf("\n value in farenheit %f",f);
+   printf("\n value in kelvin %f",k); 
+   break;
+ }
+    return 0;
+}

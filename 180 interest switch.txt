@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main() 
+{
+int p,r,t,SI;
+float CI;
+char a;
+printf("enter the value of a:");
+scanf("%c",&a);
+printf("enter p:");
+scanf("%d",&p);
+printf("enter r:");
+scanf("%d",&r);
+printf("enter t:");
+scanf("%d",&t);
+SI=p*r*t;
+CI=p*pow((1+r),t)-p;
+switch(a)
+{
+case'm':
+printf(" simple interest %d",SI);
+break;
+case'n':
+printf(" Compound interest %f",CI);
+break;
+}
+    return 0;
+}

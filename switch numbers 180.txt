@@ -1,0 +1,22 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main()
+{
+ char a ;
+ printf("enter the case:");
+ scanf("%c",&a);
+ switch(a)
+ {
+ case '+':
+ printf("positive number");
+ break;
+ case '-':
+ printf("negative number");
+ break; 
+ // a doesn't match any case constant +, -
+        default:
+            printf("zero");
+ }
+    return 0;
+}
