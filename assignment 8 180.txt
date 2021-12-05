@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() 
+{
+int a,b,h;
+float c;
+printf("enter a");
+scanf("%d",&a);
+printf("enter b");
+scanf("%d",&b);
+printf("enter h");
+scanf("%d",&h);
+c=((a+b)*h)/2;
+printf("%f ",c);
+    return 0;
+}
