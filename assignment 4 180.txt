@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main() 
+{
+int r;
+float c,d;
+printf("enter r");
+scanf("%d",&r);
+c=(22/7)*r*r;
+d=2*(22/7)*r;
+printf("%f area ",c);
+printf("%f circumference ",d);
+    return 0;
+}
