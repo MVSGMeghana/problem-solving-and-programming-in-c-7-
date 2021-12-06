@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main()
+{
+  int i=0;
+int n,a;
+printf("enter n");
+scanf("%d",&n);
+printf("enter a");
+scanf("%d",&a);
+while(i<=n)
+  {
+   printf("\n%d",a*i);
+   ++i;
+  } 
+    return 0;
+}
