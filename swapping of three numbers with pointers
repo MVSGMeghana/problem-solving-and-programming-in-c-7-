@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main()
+{
+int x,y,z,*a,*b,*c,temp;
+ printf("enter x");
+scanf("%d",&x);
+ printf("enter y");
+scanf("%d",&y);
+printf("enter z");
+scanf("%d",&z);
+printf("before swapping x,y,z are\n");
+printf("%d\n",x);
+printf("%d \n",y);
+printf("%d\n",z);
+a=&x;
+b=&y;
+c=&z;
+temp=*a;
+*a=*b;
+*b=*c;
+*c=temp;
+printf("\nafter swapping x,y,z are\n");
+printf("%d\n",x);
+printf("%d\n",y);
+printf("%d\n",z);
+    return 0;
+}
