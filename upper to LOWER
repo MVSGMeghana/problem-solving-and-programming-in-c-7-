@@ -1,0 +1,16 @@
+#include <stdio.h>  
+int main ()  
+{  
+    char u, l;  
+    int ascii;  
+    printf (" Enter Upper Case: ");  
+    scanf (" %c", &u);  
+    ascii = u + 32;  
+    printf (" %cletter in Lower case is: %c", u, ascii);  
+    printf (" \n Enter the Lower Case : ");  
+    scanf (" %c", &l);  
+    ascii = l - 32;  
+    printf (" %cletter in the Upper case is: %c", l, ascii);  
+      
+    return 0;  
+}  
