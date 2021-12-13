@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <math.h>
+int main()
+{
+int a,b,c,d;
+float m,n,img,real;
+printf("enter the coefficient a");
+scanf("%d",&a);
+printf("enter the coefficient b");
+scanf("%d",&b);
+printf("enter the coefficient c");
+scanf("%d",&c);
+d=b*b-4*a*c;
+if(d>0)
+{
+ m=(-b+sqrt(d))/(2*a);  
+ n=(-b-sqrt(d))/(2*a);
+ printf("%f %f",m,n);
+}
+else if (d=0)
+{
+m=n=(-b/2*a);
+}
+else
+
+{
+real=-b/2*a;
+img=sqrt(-d)/2*a;
+printf("m=%f+%fi",real,img);
+printf("n=%f+%fi",real,img);
+}
+    return 0;
+}
