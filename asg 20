@@ -1,0 +1,18 @@
+#include <stdio.h>
+int main()
+{
+int price,dper;
+float dis, pay;
+printf("enter discount");
+scanf("%d",&dper);
+printf("enter total price");
+scanf("%d",&price);
+dis=(dper*price)/100;
+pay=price-dis;
+printf("the amount we need to pay is %f",pay);
+return 0;
+}
+output
+enter discount75
+enter total price2000
+the amount we need to pay is 500.000000
