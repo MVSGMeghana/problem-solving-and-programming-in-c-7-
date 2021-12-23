@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main() 
+{
+int a,b;
+printf("enter the value of a");
+scanf("%d",&b);
+ printf("enter the value of b");
+scanf("%d",&a); 
+printf("after swapping a and b are");
+printf("\n%d",a);
+printf("\n%d",b);
+    return 0;
+}
+output
+enter the value of a8
+enter the value of b9
+after swapping a and b are
+9
+8
