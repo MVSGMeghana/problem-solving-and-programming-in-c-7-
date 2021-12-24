@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main()
+{
+int a,b,i;
+printf("enter lower limit");
+scanf("%d",&a);
+printf("enter upper limit");
+scanf("%d",&b);
+printf("odd numbers in given series");
+for(i=a;i<=b;i++)
+{
+printf("\n%d",i++);
+}
+printf("\neven numbers in given series");
+for(i=a;i<=b;i++)
+{
+printf("\n%d",++i);
+}
+    return 0;
+}
