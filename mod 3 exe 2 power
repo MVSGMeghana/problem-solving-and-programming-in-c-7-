@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <math.h>
+void power();
+void main()
+{
+power();
+}
+void power()
+{
+int a,b,c;
+printf("\nenter number ");
+scanf("%d",&a);
+printf("\nenter power ");
+scanf("%d",&b);
+c=pow(a,b);
+printf("%d ^ %d = %d",a,b,c);
+}
+output
+enter number 2
+enter power 3
+2 ^ 3 = 8
