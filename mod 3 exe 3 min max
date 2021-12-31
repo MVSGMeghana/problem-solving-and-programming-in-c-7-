@@ -1,0 +1,41 @@
+#include <stdio.h>
+void max();
+void min();
+void main()
+{
+max();
+min();
+}
+void max()
+{
+int a,b;
+printf("\nenter a and b");
+scanf("%d %d",&a,&b);
+if(a<b)
+{
+printf("the greatest is %d",b);
+}
+else
+{
+printf("the greatest is %d",a);
+}
+}
+void min()
+{
+int a,b;
+printf("\nenter a and b");
+scanf("%d %d",&a,&b);
+if(a<b)
+{
+printf("the smallest is %d",a);
+}
+else
+{
+printf("the smallest is %d",b);
+}
+}
+output
+enter a and b1 7
+the greatest is 7
+enter a and b1 7
+the smallest is 1
