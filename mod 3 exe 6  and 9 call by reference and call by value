@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+
+int sum1(int *x, int *y)
+{
+printf("%d",*x+*y);
+
+
+}
+int sum2(int x, int y)
+{
+    printf("\n%d",x+y);
+
+}
+int main() {
+    int a=10;
+    int b=20;
+    sum1(&a,&b);
+    sum2(a,b);
+}
