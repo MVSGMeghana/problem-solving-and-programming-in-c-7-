@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int fact(int a,int b) 
+{
+
+ 
+  if (a<b)
+  {
+     return fact(b,a);
+  }
+  else if(b!=0)
+  {
+return (a+fact(a,b-1));
+  }
+ else
+ {
+    return 0;
+ }
+}
+int main()
+{
+int n,r,m;
+printf("enter n,r");
+scanf("%d %d",&n,&r);
+m=fact(n,r);
