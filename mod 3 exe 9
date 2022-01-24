@@ -22,4 +22,6 @@ int main()
 int n,r,m;
 printf("enter n,r");
 scanf("%d %d",&n,&r);
-m=fact(n,r);
+fact(n,r);
+printf("%d",fact(n,r));
+}
