@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main() {
+    int a[5];
+    int i,n,s=0;
+    printf("enter elements size");
+    scanf("%d",&n);
+    printf("enter elements");
+    for(i=0;i<n;i++)
+    {
+    scanf("%d",&a[i]);
+    }
+    for(i=0;i<n;i++)
+    {
+    if(a[i]%2==0)
+    {
+    
+    printf("\n%d",a[i]);
+    }
+    
+    }
+    return 0;
+}
