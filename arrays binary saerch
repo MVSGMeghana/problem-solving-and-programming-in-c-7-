@@ -1,0 +1,42 @@
+#include <stdio.h>
+
+int main() {
+    int a[5];
+    int i,n,s=0,key,f,l,h,m;
+    printf("enter elements size");
+    scanf("%d",&n);
+    printf("enter elements");
+    for(i=0;i<n;i++)
+    {
+    scanf("%d",&a[i]);
+    }
+    for(i=0;i<n;i++)
+    {
+    
+    
+    printf("\n%d",a[i]);
+    
+    
+    }
+    printf("\nenter the key you want to search");
+    scanf("%d",&key);
+    l=0;
+    h=n-1;
+    while(l<h){
+        m=l+h/2;
+        if(a[m]==key)
+        {
+            f=1;
+            break;
+        }
+        else
+        {
+        l=m+1;
+        }
+    }
+    if(f==1)
+    printf("found");
+    else
+    printf("not found");
+    return 0;
+}
