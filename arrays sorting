@@ -1,0 +1,30 @@
+#include<stdio.h>
+int main()
+{
+    int a[10],n,i,j,temp,min;
+    printf("Enter the size");
+    scanf("%d",&n);
+    printf("Enter Random elements in an array:");
+    for(i=0;i<n;i++);
+    {
+    scanf("%d",&a[i]);
+    }
+    //selection short
+    for(i=0;i<n;i++)  // index checking
+    {
+        for(j=j+1;j<n;j++)
+        {
+            if(a[j]<a[min])
+            min=a[j];
+            temp=a[i];
+            a[i]=min;
+            a[min]=temp;
+        }
+    }
+    for(i=0;i<n;i++)
+    {
+        printf("\n%d",a[i]);
+   
+    }
+         return 0;
+}
