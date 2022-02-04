@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <string.h>
+
+int main()
+{
+    char a[20];
+    int x;
+    printf("enter string");
+    gets(a);
+    x=strlen(a);
+    printf("the length is %d",x);
+    
+    return 0;
+}
