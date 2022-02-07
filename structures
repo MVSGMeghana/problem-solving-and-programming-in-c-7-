@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <stdio.h>
+
+int main() {
+    char name[20];
+    float price;
+    int pages;
+    printf("the book details; \n");
+    printf("enter name of the book,price,enter pages");
+    scanf("%s %f %d",&name,&price,&pages);
+    printf("name of book is %s and it's cost  is %0.1f and the no.of pages are %d",name,price,pages);
+    
+    return 0;
+}
