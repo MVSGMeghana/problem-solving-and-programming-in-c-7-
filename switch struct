@@ -1,0 +1,48 @@
+#include <stdio.h>
+struct flat
+{
+int flat_no;
+int bill;
+};
+
+int main() {
+    int n;
+    struct flat a1;
+    a1.flat_no=1;
+    a1.bill=400;
+   struct flat a2;
+    a2.flat_no=2;
+    a2.bill=500;
+    struct flat a3;
+    a3.flat_no=3;
+    a3.bill=600;
+    struct flat a4;
+    a4.flat_no=4;
+    a4.bill=700;
+    struct flat a5;
+    a5.flat_no=5;
+    a5.bill=800;
+   printf("enter flat no:");
+   scanf("%d",&n);
+   switch(n)
+   {
+   case 1:
+   printf("%d is the bill",a1.bill);
+   break;
+   case 2:
+   printf("%d is the bill",a2.bill);
+   break;
+   case 3:
+   printf("%d is the bill",a3.bill);
+   break;
+   case 4:
+   printf("%d is the bill",a4.bill);
+   break;
+   case 5:
+   printf("%d is the bill",a5.bill);
+   break;
+   }
+   
+    
+    return 0;
+}
