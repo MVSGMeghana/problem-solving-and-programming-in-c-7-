@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+struct flat
+{
+char apartment;
+int number;
+int floorno;
+int no_of_days;
+};
+
+int main() {
+    struct flat a1;
+    a1.apartment="moonlight";
+    a1.number=135;
+    a1.floorno=3;
+    a1.no_of_days=175;
+ 
+    printf("the total rent of  flat number %d , the floor no %d for 175 days is %d /-",a1.number,a1.floorno, a1.no_of_days*750);
+    
+    return 0;
+}
