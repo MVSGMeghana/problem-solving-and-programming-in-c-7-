@@ -1,0 +1,14 @@
+#include<stdio.h>
+void main() {
+ char name[15];
+ FILE *fp;
+ fp=fopen("notes.2","a");
+ printf("enter your name:");
+ scanf("%s",name);
+ fprintf(fp,"%s",name);
+ fclose(fp);
+ fp=fopen("notes.2","r");
+ if(fscanf(fp,"%s",name))
+printf("%s",name);
+fclose(fp);
+}
