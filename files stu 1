@@ -1,0 +1,23 @@
+#include <stdio.h>
+int main()
+{
+char name[20];
+int roll_no;
+int age;
+char gender[6];
+int ph_no;
+FILE*fp;
+fp=fopen("D:\student.txt","w");
+printf("enter name");
+scanf("%s",name);
+printf("enter roll number");
+scanf("%d",&roll_no);
+printf("enter age");
+scanf("%d",&age);
+printf("enter gender");
+scanf("%s",gender);
+printf("enter ph_no");
+scanf("%d",&ph_no);
+fprintf(fp,"%s %d %d %s %d",name,roll_no,age,gender,ph_no);
+
+}
