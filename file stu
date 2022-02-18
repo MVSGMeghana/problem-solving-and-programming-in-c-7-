@@ -1,0 +1,12 @@
+#include<stdio.h>
+int main() {
+ char address[15];
+ FILE *fp;
+ fp=fopen("D:\student.txt","a");
+ printf("enter address:");
+ scanf("%s",address);
+ fprintf(fp,"  %s",address);
+ fclose(fp);
+
+
+}
